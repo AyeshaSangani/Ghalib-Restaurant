@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Menu — Ghalib Restaurant</title>
+<meta name="description" content="Explore the full Ghalib Restaurant menu — BBQ, karahi, biryani, continental, pizza, desserts and more.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C9A24E%22>غ</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-mark">غ</div>
+</div>
+
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-urdu">غالب</span>
+      <span class="brand-en">GHALIB<small>Restaurant &amp; Diwan-e-Khana</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#reserve">Visit Us</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve-nav" href="order.html"><i class="fa-solid fa-bag-shopping"></i> Order Online</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HEADER ============ -->
+<header class="page-header">
+  <div class="page-header-media">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1600&auto=format&fit=crop" alt="Ghalib Restaurant dining room">
+    <div class="page-header-overlay"></div>
+  </div>
+  <div class="container">
+    <p class="page-breadcrumb"><a href="index.html">Home</a> / Menu</p>
+    <h1>Our Menu</h1>
+    <p>A printed page from the kitchen's own diwan — every dish, priced and described, ready when you are.</p>
+  </div>
+</header>
+
+
+<section class="menu-page-section">
+  <div class="container">
+    <div class="text-center mb-5" data-reveal>
+      <p class="eyebrow">Diwan-e-Ta'am · Full Menu</p>
+      <h2 class="section-title">Composed Like a Verse</h2>
+      <p class="section-sub mx-auto">Every course from our rooftop kitchen, arranged like the couplets of a ghazal — complete on their own, richer together. Ready to order? Head to our online ordering page.</p>
+    </div>
+
+    <ul class="nav nav-pills menu-tabs justify-content-center mb-5 flex-nowrap flex-lg-wrap" id="menuTab" role="tablist" data-reveal>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-starters" data-bs-toggle="pill" data-bs-target="#pane-starters" type="button" role="tab">Starters &amp; Chaats</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-bbq" data-bs-toggle="pill" data-bs-target="#pane-bbq" type="button" role="tab">BBQ &amp; Kebabs</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-karahi" data-bs-toggle="pill" data-bs-target="#pane-karahi" type="button" role="tab">Karahi &amp; Handi</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-chef" data-bs-toggle="pill" data-bs-target="#pane-chef" type="button" role="tab">Chef's Recommendation</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-continental" data-bs-toggle="pill" data-bs-target="#pane-continental" type="button" role="tab">Continental &amp; Steaks</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-pizza" data-bs-toggle="pill" data-bs-target="#pane-pizza" type="button" role="tab">Brick Oven Pizza</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-bread" data-bs-toggle="pill" data-bs-target="#pane-bread" type="button" role="tab">Naan &amp; Bread</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-drinks" data-bs-toggle="pill" data-bs-target="#pane-drinks" type="button" role="tab">Beverages</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-dessert" data-bs-toggle="pill" data-bs-target="#pane-dessert" type="button" role="tab">Desserts</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="menuTabContent">
+
+      <!-- STARTERS & CHAATS -->
+      <div class="tab-pane fade show active" id="pane-starters" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Corn Soup</h3><span class="dish-line"></span><span class="price">Rs. 300</span></div>
+              <p>Silken corn broth, hand-pulled chicken, a whisper of white pepper.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Hot &amp; Sour Soup</h3><span class="dish-line"></span><span class="price">Rs. 300</span></div>
+              <p>A brisk, peppery broth balanced with a tang of vinegar.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Grilled Chicken Caesar Salad</h3><span class="dish-line"></span><span class="price">Rs. 790</span></div>
+              <p>Crisp romaine, shaved parmesan, garlic croutons and grilled chicken breast.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Hummus</h3><span class="dish-line"></span><span class="price">Rs. 450</span></div>
+              <p>Whipped chickpea and tahini, olive oil, warm pita on the side.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Barbeque Wings</h3><span class="dish-line"></span><span class="price">Rs. 690</span></div>
+              <p>Smoky char-grilled wings, glazed in a house barbeque sauce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Dynamite Prawns</h3><span class="dish-line"></span><span class="price">Rs. 870</span></div>
+              <p>Crisp-fried prawns tossed in a creamy, chilli-spiked dynamite sauce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Loaded Fries</h3><span class="dish-line"></span><span class="price">Rs. 790</span></div>
+              <p>Crisp fries piled with melted cheese, jalapeño and house sauce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Mix Chaat</h3><span class="dish-line"></span><span class="price">Rs. 295</span></div>
+              <p>A tangy street-style medley of chickpeas, potato and crisp sev.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Pani Puri</h3><span class="dish-line"></span><span class="price">Rs. 295</span></div>
+              <p>Crisp puris filled with spiced potato and tangy mint water.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Raita</h3><span class="dish-line"></span><span class="price">Rs. 175</span></div>
+              <p>Whipped yoghurt, toasted cumin and a scatter of fresh coriander.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BBQ & KEBABS -->
+      <div class="tab-pane fade" id="pane-bbq" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Tikka</h3><span class="dish-line"></span><span class="price">Rs. 525</span></div>
+              <p>Classic bone-in chicken, marinated and char-grilled over open flame.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Malai Boti</h3><span class="dish-line"></span><span class="price">Rs. 850</span></div>
+              <p>Cream-marinated chicken, gently smoked, finished with green cardamom.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Shish Taouk</h3><span class="dish-line"></span><span class="price">Rs. 950</span></div>
+              <p>Levantine-style skewered chicken, served with saffron rice and fries.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Seekh Kabab (Beef)</h3><span class="dish-line"></span><span class="price">Rs. 950</span></div>
+              <p>Hand-minced beef, laced with roasted spices, charcoal-grilled smoky.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Beef Bihari Kabab</h3><span class="dish-line"></span><span class="price">Rs. 990</span></div>
+              <p>Ribbon-cut beef, deeply marinated in roasted spice and yoghurt.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Persian Khaas Kabab (Mutton)</h3><span class="dish-line"></span><span class="price">Rs. 1,450</span></div>
+              <p>Slow-pounded mutton kabab, finished over glowing charcoal.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Reshmi Chicken Kabab</h3><span class="dish-line"></span><span class="price">Rs. 850</span></div>
+              <p>Silken, cream-bound chicken kabab with a gentle smoke finish.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Mutton Ribs</h3><span class="dish-line"></span><span class="price">Rs. 2,890</span></div>
+              <p>Slow-grilled mutton ribs, tender to the bone, deeply spiced.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Ghalib Mix Platter</h3><span class="dish-line"></span><span class="price">Rs. 2,900</span></div>
+              <p>Turkish kabab, Persian khaas kabab, malai boti, Afghani boti &amp; mutton chanp on saffron rice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KARAHI & HANDI -->
+      <div class="tab-pane fade" id="pane-karahi" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Peshawari Karahi (Full)</h3><span class="dish-line"></span><span class="price">Rs. 2,050</span></div>
+              <p>Wok-tossed in tomato, ginger and green chilli, finished with coriander.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken White Karahi (Full)</h3><span class="dish-line"></span><span class="price">Rs. 2,050</span></div>
+              <p>Classic white-cut karahi, ginger-heavy, finished with fresh cream.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Ghalib Signature Mutton Karahi (Full)</h3><span class="dish-line"></span><span class="price">Rs. 2,950</span></div>
+              <p>Our house recipe — slow-cooked mutton in a rich tomato masala.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Mutton Peshawari Karahi (Half)</h3><span class="dish-line"></span><span class="price">Rs. 1,850</span></div>
+              <p>Bone-in mutton, wok-cooked Peshawari-style with tomato and ginger.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Makhni Handi</h3><span class="dish-line"></span><span class="price">Rs. 1,590</span></div>
+              <p>Butter-rich tomato gravy, slow-simmered chicken, a swirl of cream.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Paneer Reshmi Handi</h3><span class="dish-line"></span><span class="price">Rs. 1,690</span></div>
+              <p>Silken chicken and paneer simmered in a velvety cashew gravy.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Hunzai Handi</h3><span class="dish-line"></span><span class="price">Rs. 1,590</span></div>
+              <p>A northern-inspired handi, fragrant with whole spice and herbs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHEF'S RECOMMENDATION -->
+      <div class="tab-pane fade" id="pane-chef" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Tarka Daal</h3><span class="dish-line"></span><span class="price">Rs. 750</span></div>
+              <p>A house blend of lentils, tempered with garlic and smoked butter.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Palak Paneer</h3><span class="dish-line"></span><span class="price">Rs. 840</span></div>
+              <p>Silken spinach purée, hand-cut paneer, a thread of cream.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Balochi Sajji</h3><span class="dish-line"></span><span class="price">Rs. 990</span></div>
+              <p>Whole spiced chicken, slow-roasted over open fire, Balochi-style.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Lahori Chargha</h3><span class="dish-line"></span><span class="price">Rs. 990</span></div>
+              <p>Steamed then fried whole chicken, deeply spiced, Lahori-style.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Tikka Masala</h3><span class="dish-line"></span><span class="price">Rs. 1,490</span></div>
+              <p>Char-grilled chicken tikka finished in a rich, creamy tomato masala.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Prawn Masala</h3><span class="dish-line"></span><span class="price">Rs. 1,590</span></div>
+              <p>Plump prawns simmered in a robust, spice-forward masala.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTINENTAL & STEAKS -->
+      <div class="tab-pane fade" id="pane-continental" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Ghalib Club Sandwich</h3><span class="dish-line"></span><span class="price">Rs. 850</span></div>
+              <p>Triple-stacked classic — chicken, egg, cheese and crisp lettuce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Crispy Fried Chicken Burger</h3><span class="dish-line"></span><span class="price">Rs. 950</span></div>
+              <p>Buttermilk-fried chicken fillet, house slaw, toasted brioche bun.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Alfredo Pasta</h3><span class="dish-line"></span><span class="price">Rs. 940</span></div>
+              <p>Silky cream sauce, parmesan and cracked black pepper.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Parmesan Shrimp Spaghetti</h3><span class="dish-line"></span><span class="price">Rs. 1,050</span></div>
+              <p>Garlic-butter shrimp tossed through parmesan-dusted spaghetti.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Fish &amp; Chips</h3><span class="dish-line"></span><span class="price">Rs. 1,050</span></div>
+              <p>Beer-battered fish, golden fries, house tartar sauce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Beef Stroganoff</h3><span class="dish-line"></span><span class="price">Rs. 1,050</span></div>
+              <p>Tender beef strips in a mushroom-cream sauce, mashed potatoes.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Steak, Creamy Pepper Sauce</h3><span class="dish-line"></span><span class="price">Rs. 1,290</span></div>
+              <p>Pan-seared chicken breast, a rich cream and cracked-pepper sauce.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>American Beef Steak</h3><span class="dish-line"></span><span class="price">Rs. 1,690</span></div>
+              <p>Char-grilled beef steak, finished with a classic house sauce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BRICK OVEN PIZZA -->
+      <div class="tab-pane fade" id="pane-pizza" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Margherita Pizza</h3><span class="dish-line"></span><span class="price">Rs. 890</span></div>
+              <p>San Marzano tomato, fresh mozzarella, basil, brick-oven baked.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chicken Tikka Pizza</h3><span class="dish-line"></span><span class="price">Rs. 1,340</span></div>
+              <p>Spiced chicken tikka, onion and green chilli over a smoky base.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Pepperoni Pizza</h3><span class="dish-line"></span><span class="price">Rs. 1,290</span></div>
+              <p>Classic pepperoni, mozzarella, oven-crisped to order.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Spicy Sicilian Pizza</h3><span class="dish-line"></span><span class="price">Rs. 1,290</span></div>
+              <p>A fiery blend of chicken, jalapeño and chilli flakes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAAN & BREAD -->
+      <div class="tab-pane fade" id="pane-bread" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Cheese Naan</h3><span class="dish-line"></span><span class="price">Rs. 390</span></div>
+              <p>Tandoor-baked naan, molten mozzarella and cheddar folded through.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Garlic Naan</h3><span class="dish-line"></span><span class="price">Rs. 100</span></div>
+              <p>Fresh garlic and coriander, brushed over a puffed tandoor naan.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Roghni Naan</h3><span class="dish-line"></span><span class="price">Rs. 100</span></div>
+              <p>Milk-glazed and sesame-topped, baked soft with a golden crust.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Plain Naan</h3><span class="dish-line"></span><span class="price">Rs. 55</span></div>
+              <p>Soft, puffed tandoor naan — the everyday essential.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Lacha Paratha</h3><span class="dish-line"></span><span class="price">Rs. 100</span></div>
+              <p>Layered and flaky, pan-griddled with a touch of desi ghee.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Kandhari Naan</h3><span class="dish-line"></span><span class="price">Rs. 90</span></div>
+              <p>Stuffed with dried fruit and nuts, a gently sweet finish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEVERAGES -->
+      <div class="tab-pane fade" id="pane-drinks" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Kashmiri Chai</h3><span class="dish-line"></span><span class="price">Rs. 290</span></div>
+              <p>Rose-pink tea, whipped to a froth, crowned with pistachio slivers.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Doodh Patti</h3><span class="dish-line"></span><span class="price">Rs. 260</span></div>
+              <p>Strong, milky classic-style tea, brewed the traditional way.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Fresh Juice</h3><span class="dish-line"></span><span class="price">Rs. 390</span></div>
+              <p>Seasonal fruit, pressed fresh, no added sugar.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Meethi Lassi</h3><span class="dish-line"></span><span class="price">Rs. 240</span></div>
+              <p>Thick, chilled yoghurt lassi, lightly sweetened.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Mint Lemonade</h3><span class="dish-line"></span><span class="price">Rs. 330</span></div>
+              <p>Fresh mint and lemon, shaken bright and cold.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Soft Drinks</h3><span class="dish-line"></span><span class="price">Rs. 150</span></div>
+              <p>Chilled Coca-Cola, Sprite or Fanta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="tab-pane fade" id="pane-dessert" role="tabpanel">
+        <div class="row gy-4">
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Rabri</h3><span class="dish-line"></span><span class="price">Rs. 390</span></div>
+              <p>Slow-reduced sweetened milk, layered with cream and pistachio.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Hot Gulab Jamun</h3><span class="dish-line"></span><span class="price">Rs. 275</span></div>
+              <p>Milk-solid dumplings, fried and soaked in cardamom-rose syrup.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Kulfi Falooda</h3><span class="dish-line"></span><span class="price">Rs. 390</span></div>
+              <p>Saffron kulfi over vermicelli, rose syrup and basil seeds.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Crispy Jalebi</h3><span class="dish-line"></span><span class="price">Rs. 390</span></div>
+              <p>Golden, syrup-soaked spirals, crisp on the outside, juicy within.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chocolate Fudge Brownie</h3><span class="dish-line"></span><span class="price">Rs. 475</span></div>
+              <p>Warm fudge brownie, served with a scoop of vanilla ice cream.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="dish-row">
+              <div class="dish-head"><h3>Chocolate Divine Cake Slice</h3><span class="dish-line"></span><span class="price">Rs. 425</span></div>
+              <p>Rich, layered chocolate cake — a Ghalib dessert-menu favourite.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container">
+  <div class="menu-cta-banner" data-reveal>
+    <h3>Craving something from this page?</h3>
+    <p>Order it online and we'll have it at your door.</p>
+    <a href="order.html" class="btn btn-gold"><i class="fa-solid fa-bag-shopping"></i> Order Online</a>
+  </div>
+</div>
+
+<div style="height:5.5rem;"></div>
+
+<footer class="site-footer">
+  <div class="footer-ornament" aria-hidden="true">
+    <svg viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0,20 C100,0 150,40 250,20 C350,0 400,40 500,20 C600,0 650,40 750,20 C775,10 790,10 800,20" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="400" cy="20" r="4" fill="currentColor"/></svg>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="footer-brand" href="index.html#home">
+          <span class="brand-urdu">غالب</span>
+          <span class="brand-en">GHALIB</span>
+        </a>
+        <p class="footer-text">An exquisite culinary journey through South Asian cuisine, composed in the spirit of the legendary poet Mirza Ghalib.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Visit</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#reserve">Reserve</a></li>
+          <li><a href="tel:02111144254">Call Us</a></li>
+          <li><a href="index.html#reserve">Directions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h4>Stay in the Loop</h4>
+        <p class="footer-text">Seasonal menus and evenings of poetry &amp; food, in your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Ghalib Restaurant. All rights reserved.</p>
+      <p>Crafted with reverence for taste &amp; tradition.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghalib Restaurant — Fine South Asian Dining</title>
+<meta name="description" content="Ghalib Restaurant — an exquisite culinary journey through South Asian cuisine, inspired by the legendary poet Mirza Ghalib.">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C9A24E%22>غ</text></svg>">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+  <div class="preloader-mark">غ</div>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-urdu">غالب</span>
+      <span class="brand-en">GHALIB<small>Restaurant &amp; Diwan-e-Khana</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reserve">Visit Us</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve-nav" href="order.html"><i class="fa-solid fa-bag-shopping"></i> Order Online</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="home" class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1920&auto=format&fit=crop" alt="Elegant table setting at Ghalib Restaurant">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-frame" aria-hidden="true">
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span>
+  </div>
+  <div class="container hero-content" data-reveal>
+    <p class="hero-urdu">دائرہِ ذوق</p>
+    <p class="eyebrow">A Circle of Taste, Since Tradition</p>
+    <h1 class="hero-title">Ghalib</h1>
+    <p class="hero-sub">Where every dish, like every couplet, is composed with patience, and served with reverence for the art of the table.</p>
+    <div class="hero-actions">
+      <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+      <a href="#menu" class="btn btn-outline-ivory">Explore the Menu</a>
+    </div>
+  </div>
+  <a href="#sher" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- ============ SHER / COUPLET TICKER ============ -->
+<section id="sher" class="sher-band" data-reveal>
+  <div class="sher-track">
+    <span class="sher-item"><span class="urdu">ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے</span><span class="div">—</span><span class="tr">A thousand desires, each worth dying for — Mirza Ghalib</span></span>
+    <span class="sher-item"><span class="urdu">دل ہی تو ہے نہ سنگ و خشت، درد سے بھر نہ آئے کیوں</span><span class="div">—</span><span class="tr">It is but a heart, not brick or stone — Mirza Ghalib</span></span>
+    <span class="sher-item"><span class="urdu">عشق نے غالب نکما کر دیا</span><span class="div">—</span><span class="tr">Love has rendered Ghalib idle, otherwise... — Mirza Ghalib</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="sher-item" aria-hidden="true"><span class="urdu">ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے</span><span class="div">—</span><span class="tr">A thousand desires, each worth dying for — Mirza Ghalib</span></span>
+    <span class="sher-item" aria-hidden="true"><span class="urdu">دل ہی تو ہے نہ سنگ و خشت، درد سے بھر نہ آئے کیوں</span><span class="div">—</span><span class="tr">It is but a heart, not brick or stone — Mirza Ghalib</span></span>
+    <span class="sher-item" aria-hidden="true"><span class="urdu">عشق نے غالب نکما کر دیا</span><span class="div">—</span><span class="tr">Love has rendered Ghalib idle, otherwise... — Mirza Ghalib</span></span>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-reveal>
+        <div class="manuscript-card">
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <p class="ms-urdu">جو یہ کہے کہ ریختہ کیوں کر ہو رشکِ فارسی</p>
+          <p class="ms-quote">"A meal, like a verse, must be composed —
+          each ingredient a word, each spice a syllable of meaning."</p>
+          <span class="ms-sign">— The Kitchen at Ghalib</span>
+        </div>
+      </div>
+      <div class="col-lg-7" data-reveal>
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">A Table Set in the Spirit of the Poet</h2>
+        <p class="lead-text">Ghalib Restaurant, a rooftop address on Tipu Sultan Road, invites patrons to indulge in an exquisite culinary journey through the flavors of South Asian, Mughlai and continental cuisine. With a rich heritage inspired by the legendary poet Mirza Ghalib, our establishment embodies elegance and tradition.</p>
+        <p class="body-text">From aromatic biryanis to succulent BBQ kebabs, handi &amp; karahi to brick-oven pizza, each dish is meticulously crafted to tantalize the senses. Dine under the open sky on our breezy rooftop, with attentive service and valet parking — or order online and let the journey come to you.</p>
+        <div class="row g-4 mt-3 stats-row">
+          <div class="col-6 col-md-3">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Years of Heritage</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">Signature Dishes</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-num">4.8</span>
+            <span class="stat-label">Guest Rating</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-num">15</span>
+            <span class="stat-label">Master Chefs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU TEASER ============ -->
+<section id="menu" class="menu-teaser-section">
+  <div class="container">
+    <div class="text-center mb-5" data-reveal>
+      <p class="eyebrow">Diwan-e-Ta'am · From the Kitchen</p>
+      <h2 class="section-title">A Taste of the Menu</h2>
+      <p class="section-sub mx-auto">Rooftop favourites spanning BBQ, handi &amp; karahi, biryani and more — composed like the couplets of a ghazal, complete on their own, richer together.</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="teaser-card">
+          <span class="teaser-icon"><i class="fa-solid fa-fire-burner"></i></span>
+          <h3>BBQ &amp; Kebabs</h3>
+          <p>Charcoal-grilled seekh, chapli and reshmi tikka boti.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="teaser-card">
+          <span class="teaser-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+          <h3>Handi &amp; Karahi</h3>
+          <p>Mutton karahi, chicken karahi and slow-braised nihari.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="teaser-card">
+          <span class="teaser-icon"><i class="fa-solid fa-utensils"></i></span>
+          <h3>Rice &amp; Biryani</h3>
+          <p>The signature Ghalib biryani, dum-cooked over embers.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="teaser-card">
+          <span class="teaser-icon"><i class="fa-solid fa-mug-hot"></i></span>
+          <h3>Desserts &amp; Chai</h3>
+          <p>Rabri, gulab jamun and rose-pink Kashmiri chai.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center menu-teaser-actions" data-reveal>
+      <a href="menu.html" class="btn btn-outline-maroon">View Full Menu</a>
+      <a href="order.html" class="btn btn-gold"><i class="fa-solid fa-bag-shopping"></i> Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE BANNER ============ -->
+<section class="feature-banner" data-reveal>
+  <div class="feature-media">
+    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=1920&auto=format&fit=crop" alt="Chef preparing a signature dish at Ghalib Restaurant">
+  </div>
+  <div class="feature-overlay"></div>
+  <div class="container">
+    <div class="feature-content">
+      <p class="hero-urdu small">مہمان نوازی</p>
+      <p class="eyebrow light">The Chef's Table</p>
+      <h2 class="section-title light">An Invitation, Not Just a Meal</h2>
+      <p class="light-text">Reserve our private Diwan-e-Khas table for an intimate tasting menu, guided course by course by our head chef.</p>
+      <a href="#reserve" class="btn btn-outline-ivory">Book the Chef's Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="text-center mb-5" data-reveal>
+      <p class="eyebrow">Musawwari · Gallery</p>
+      <h2 class="section-title">Glimpses of the Diwan-e-Khana</h2>
+    </div>
+    <div class="gallery-grid" data-reveal>
+      <button class="gallery-item g1" data-full="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1600&auto=format&fit=crop" data-caption="Our main dining hall at dusk">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800&auto=format&fit=crop" alt="Dining hall at Ghalib Restaurant">
+      </button>
+      <button class="gallery-item g2" data-full="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=1600&auto=format&fit=crop" data-caption="Our chef finishing a signature dish">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop" alt="Chef plating a dish">
+      </button>
+      <button class="gallery-item g3" data-full="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=1600&auto=format&fit=crop" data-caption="A platter of freshly grilled kebabs">
+        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800&auto=format&fit=crop" alt="Grilled kebab platter">
+      </button>
+      <button class="gallery-item g4" data-full="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=1600&auto=format&fit=crop" data-caption="Our signature Ghalib biryani">
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=800&auto=format&fit=crop" alt="Biryani dish">
+      </button>
+      <button class="gallery-item g5" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop" data-caption="A quiet corner, set for two">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Restaurant table setting">
+      </button>
+      <button class="gallery-item g6" data-full="https://images.unsplash.com/photo-1576402187878-974f70c890a5?q=80&w=1600&auto=format&fit=crop" data-caption="Warm evening ambience">
+        <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5?q=80&w=800&auto=format&fit=crop" alt="Restaurant interior ambience">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <div class="text-center mb-5" data-reveal>
+      <p class="eyebrow">Ehsasat · Words of Guests</p>
+      <h2 class="section-title">From Our Diwan of Guest Books</h2>
+    </div>
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-reveal>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="review-card mx-auto">
+            <span class="quote-mark">”</span>
+            <p class="review-text">Every dish told a story before I even tasted it. The Ghalib Biryani alone is worth the visit — layered, patient, unforgettable.</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-name">Ayesha Raza</p>
+            <p class="review-role">Food Columnist, Karachi</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card mx-auto">
+            <span class="quote-mark">”</span>
+            <p class="review-text">The ambience feels like stepping into a page of old Delhi poetry. Service is warm, precise, and never hurried.</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-name">Bilal Ahmed</p>
+            <p class="review-role">Regular Guest</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card mx-auto">
+            <span class="quote-mark">”</span>
+            <p class="review-text">We booked the Chef's Table for an anniversary — course after course, each one a small revelation. Truly premium.</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-name">Sana &amp; Omar</p>
+            <p class="review-role">Guests</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+        <span class="custom-arrow"><i class="fa-solid fa-chevron-left"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+        <span class="custom-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+      </button>
+      <div class="carousel-indicators-custom">
+        <button data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+        <button data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVATION ============ -->
+<section id="reserve" class="reserve-section">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-5" data-reveal>
+        <p class="eyebrow light">Rezarvation · Book a Table</p>
+        <h2 class="section-title light">Reserve Your Evening</h2>
+        <p class="light-text">Tell us when to expect you, and we'll have your table set, your seat by the window, and your first course already in mind.</p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><strong>Address</strong><span>4th Floor, One IBL Center, Tipu Sultan Road, Off Shahrah-e-Faisal, Karachi</span></div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div><strong>Phone</strong><span>021 111 442 542</span></div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div><strong>Open Daily</strong><span>1:00 PM — 12:00 AM</span></div>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-reveal>
+        <form class="reserve-form needs-validation" id="reserveForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" for="fName">Full Name</label>
+              <input type="text" class="form-control" id="fName" required>
+              <div class="invalid-feedback">Please tell us your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="fPhone">Phone Number</label>
+              <input type="tel" class="form-control" id="fPhone" required>
+              <div class="invalid-feedback">Please enter a valid phone number.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="fDate">Date</label>
+              <input type="date" class="form-control" id="fDate" required>
+              <div class="invalid-feedback">Please choose a date.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="fTime">Time</label>
+              <input type="time" class="form-control" id="fTime" required>
+              <div class="invalid-feedback">Please choose a time.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="fGuests">Guests</label>
+              <select class="form-select" id="fGuests" required>
+                <option value="" selected disabled>Select</option>
+                <option>1 – 2 Guests</option>
+                <option>3 – 4 Guests</option>
+                <option>5 – 8 Guests</option>
+                <option>Private Dining (9+)</option>
+              </select>
+              <div class="invalid-feedback">Please select a party size.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="fEmail">Email</label>
+              <input type="email" class="form-control" id="fEmail" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="fNote">Special Request <span class="opt">(optional)</span></label>
+              <textarea class="form-control" id="fNote" rows="3" placeholder="Anniversary, dietary need, seating preference…"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-gold w-100 w-md-auto">Confirm Reservation</button>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" class="form-success d-none">
+          <i class="fa-solid fa-feather"></i>
+          <p>Your table is noted, <span id="successName">friend</span>. A confirmation call will follow shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-ornament" aria-hidden="true">
+    <svg viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0,20 C100,0 150,40 250,20 C350,0 400,40 500,20 C600,0 650,40 750,20 C775,10 790,10 800,20" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="400" cy="20" r="4" fill="currentColor"/></svg>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="footer-brand" href="#home">
+          <span class="brand-urdu">غالب</span>
+          <span class="brand-en">GHALIB</span>
+        </a>
+        <p class="footer-text">An exquisite culinary journey through South Asian cuisine, composed in the spirit of the legendary poet Mirza Ghalib.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Visit</h4>
+        <ul class="footer-links">
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="tel:02111144254">Call Us</a></li>
+          <li><a href="#reserve">Directions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h4>Stay in the Loop</h4>
+        <p class="footer-text">Seasonal menus and evenings of poetry &amp; food, in your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Ghalib Restaurant. All rights reserved.</p>
+      <p>Crafted with reverence for taste &amp; tradition.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
