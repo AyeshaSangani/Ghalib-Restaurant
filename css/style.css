@@ -247,21 +247,24 @@ img{max-width:100%; display:block;}
 .btn-outline-maroon:hover{background:var(--maroon); color:var(--ivory) !important;}
 
 /* ==========================================================
-   MENU TEASER (home page)
+   MENU
    ========================================================== */
-.menu-teaser-section{padding:7rem 0; background:var(--ivory-2);}
 .teaser-card{
-  background:var(--ivory); border:1px solid var(--gold-soft); padding:2.2rem 1.6rem; text-align:center;
-  height:100%; transition:var(--transition);
+  background:var(--ivory); border:1px solid var(--gold-soft); padding:0 0 1.8rem;
+  height:100%; transition:var(--transition); overflow:hidden; text-align:center;
 }
 .teaser-card:hover{transform:translateY(-6px); box-shadow:0 20px 34px -22px rgba(42,10,16,.35); border-color:var(--gold);}
-.teaser-icon{
+.teaser-img{position:relative; height:150px; overflow:hidden; margin-bottom:2.2rem;}
+.teaser-img img{width:100%; height:100%; object-fit:cover; transition:transform .6s ease;}
+.teaser-card:hover .teaser-img img{transform:scale(1.08);}
+.teaser-img .teaser-icon{
+  position:absolute; bottom:-24px; left:50%; transform:translateX(-50%);
   width:56px; height:56px; border-radius:50%; background:var(--maroon-darker); color:var(--gold);
-  display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin:0 auto 1rem;
+  display:flex; align-items:center; justify-content:center; font-size:1.3rem;
+  border:3px solid var(--ivory); box-shadow:0 8px 16px -6px rgba(42,10,16,.4);
 }
-.teaser-card h3{font-family:var(--font-display); font-size:1.2rem; color:var(--maroon-darker); margin-bottom:.5rem;}
-.teaser-card p{color:#5a4c3f; font-size:.9rem; margin:0;}
-.menu-teaser-actions{display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;}
+.teaser-card h3{font-family:var(--font-display); font-size:1.2rem; color:var(--maroon-darker); margin:0 0 .5rem; padding:0 1.4rem;}
+.teaser-card p{color:#5a4c3f; font-size:.9rem; margin:0; padding:0 1.4rem;}
 
 /* ==========================================================
    INTERIOR PAGE HEADER (menu.html / order.html)
